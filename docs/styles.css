@@ -1,0 +1,41 @@
+*, ::before, ::after {
+   box-sizing:border-box;
+}
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+    background-color: grey;
+}
+div {
+    width:inherit;
+    height:inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    gap:2em;
+}
+
+h2 ,p {
+    font-family: tahoma;
+    color:white;
+}
+button {
+    background-color: #120A8F;
+    color: white;
+    border:2px solid #120A8F;
+    border-radius:40px;
+}
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+@media screen and (orientation: portrait) {
+    h2 {
+        font-size: 21px;
+    }
+}
